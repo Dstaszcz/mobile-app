@@ -29,8 +29,8 @@ class AppLayout(BoxLayout):
 
         self.header_label = Label(text='Math Function Analyzer', height=50, size_hint=(1, None), font_size='28sp',
                                   color=(1, 1, 1, 0.9))
-        self.blank = Label(height=50, color=(1, 1, 1, 0.9))
-        self.add_widget(self.blank)
+        #self.blank = Label(height=50, color=(1, 1, 1, 0.9))
+        #self.add_widget(self.blank)
 
         self.function_input = TextInput(hint_text='Enter your math function', **self.text)
         self.samples_input = TextInput(hint_text='Enter samples', **self.text)
@@ -43,14 +43,14 @@ class AppLayout(BoxLayout):
         self.add_widget(self.x_min)
         self.add_widget(self.x_max)
 
-        self.blank = Label(height=50, color=(1, 1, 1, 0.9))
-        self.add_widget(self.blank)
+        #self.blank = Label(height=50, color=(1, 1, 1, 0.9))
+        #self.add_widget(self.blank)
 
         self.check_button = self.create_button('Calculate your function', self.check_math_function)
         self.add_widget(self.check_button)
 
-        self.blank = Label(height=50, color=(1, 1, 1, 0.9))
-        self.add_widget(self.blank)
+        #self.blank = Label(height=50, color=(1, 1, 1, 0.9))
+        #self.add_widget(self.blank)
 
         self.result_domain = TextInput(hint_text='Domain of function:', **self.text)
         self.result_set_of_values = TextInput(hint_text='Set of values:', **self.text)
@@ -68,8 +68,8 @@ class AppLayout(BoxLayout):
         self.add_widget(self.result_derivative)
         self.add_widget(self.result_internal)
 
-        self.blank = Label(height=50, color=(1, 1, 1, 0.9))
-        self.add_widget(self.blank)
+        #self.blank = Label(height=50, color=(1, 1, 1, 0.9))
+        #self.add_widget(self.blank)
 
     def create_button(self, text, on_press_handler):
         return Button(text=text, on_press=on_press_handler, **self.button)
