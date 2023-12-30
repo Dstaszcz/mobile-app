@@ -37,6 +37,10 @@ class AppLayout(BoxLayout):
         self.x_max = TextInput(hint_text='Enter x_max', **self.text)
 
         self.add_widget(self.header_label)
+
+        self.blank = Label(height=50, color=(1, 1, 1, 0.9))
+        self.add_widget(self.blank)
+        
         self.add_widget(self.function_input)
         self.add_widget(self.samples_input)
         self.add_widget(self.x_min)
