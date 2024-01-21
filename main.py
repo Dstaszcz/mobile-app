@@ -62,6 +62,7 @@ class AppLayout(BoxLayout):
         self.result_multivalued = TextInput(hint_text="Is function multivalued?", **self.text)
         self.result_derivative = TextInput(hint_text="Derivative in x_min: and x_max:", **self.text)
         self.result_internal = TextInput(hint_text="Definite integral in the interval x_min;x_max: ", **self.text)
+        self.copyrights = Label(text="Copyrights by Daniel Staszczyszyn 2023", font_size="10sp")
 
         self.add_widget(self.result_domain)
         self.add_widget(self.result_set_of_values)
@@ -70,6 +71,7 @@ class AppLayout(BoxLayout):
         self.add_widget(self.result_multivalued)
         self.add_widget(self.result_derivative)
         self.add_widget(self.result_internal)
+        self.add_widget(self.copyrights)
 
         self.blank = Label(height=50, color=(1, 1, 1, 0.9))
         self.add_widget(self.blank)
